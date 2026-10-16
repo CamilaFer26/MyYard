@@ -1,7 +1,8 @@
 package com.unir.myyard;
 
 import android.os.Bundle;
-
+import android.widget.Button;
+import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -10,6 +11,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private String apiKey = BuildConfig.PLANTNET_API_KEY;
+
+    private Button btnSelecionarFoto;
+    private TextView tvResultado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnSelecionarFoto = findViewById(R.id.btnFoto);
+        tvResultado = findViewById(R.id.textView);
     }
 }

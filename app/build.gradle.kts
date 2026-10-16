@@ -13,7 +13,9 @@ android {
     compileSdk {
         version = release(37)
     }
-
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
         applicationId = "com.unir.myyard"
         minSdk = 24
@@ -22,6 +24,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "PLANTNET_API_KEY", "\"2b103CaRm8FhUoXNd5iOLXsu\"")
     }
 
     buildTypes {

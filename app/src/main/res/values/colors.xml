@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Paleta Tema Claro (Light) -->
+    <color name="primary_light">#2E6F40</color>            <!-- Cor principal/destaque em botões e barras -->
+    <color name="on_primary_light">#FFFFFF</color>         <!-- Texto/Ícone sobre a cor principal -->
+    <color name="primary_container_light">#B3F2C2</color>  <!-- Fundos de destaque secundário -->
+    <color name="on_primary_container_light">#00210B</color>
+
+    <color name="secondary_light">#526350</color>          <!-- Cor secundária de apoio -->
+    <color name="on_secondary_light">#FFFFFF</color>
+
+    <color name="background_light">#F6FBF3</color>         <!-- Fundo da tela principal -->
+    <color name="on_background_light">#191D19</color>      <!-- Texto/Ícone principal sobre o fundo da tela -->
+
+    <color name="surface_light">#F6FBF3</color>            <!-- Fundo de Cards, Modais, Menus e BottomSheets -->
+    <color name="on_surface_light">#191D19</color>         <!-- Texto/Ícone sobre a superfície -->
+    <color name="surface_variant_light">#DEE5DA</color>    <!-- Fundo de Inputs, Dividers e bordas -->
+    <color name="on_surface_variant_light">#424940</color>  <!-- Texto secundário / Dicas (hint) em campos de texto -->
+
+    <color name="error_light">#BA1A1A</color>              <!-- Erros e alertas -->
+    <color name="on_error_light">#FFFFFF</color>
+
+    <!-- Paleta Tema Escuro (Dark) -->
+    <color name="primary_dark">#98D5A7</color>             <!-- Cor principal com menor saturação para o escuro -->
+    <color name="on_primary_dark">#00391A</color>
+    <color name="primary_container_dark">#13562A</color>
+    <color name="on_primary_container_dark">#B3F2C2</color>
+
+    <color name="secondary_dark">#B8CCB5</color>
+    <color name="on_secondary_dark">#253424</color>
+
+    <color name="background_dark">#111412</color>          <!-- Fundo da tela principal no escuro -->
+    <color name="on_background_dark">#E2E3DD</color>
+
+    <color name="surface_dark">#111412</color>
+    <color name="on_surface_dark">#E2E3DD</color>
+    <color name="surface_variant_dark">#424940</color>
+    <color name="on_surface_variant_dark">#C2C9BD</color>
+
+    <color name="error_dark">#FFB4AB</color>
+    <color name="on_error_dark">#690005</color>
 </resources>
