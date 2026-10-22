@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_search"
-        android:title="@string/menu_search"
+    <item android:id="@+id/homeFragment"
+        android:title="Início"
         android:icon="@drawable/ic_launcher_foreground" />
-    <item android:id="@+id/action_settings"
-        android:title="Catalogar planta"
+
+    <item android:id="@+id/catalogFragment"
+        android:title="Catalogar"
         android:icon="@drawable/camera" />
-    <item android:id="@+id/action_navigation"
-        android:title="@string/menu_navigation"
+
+    <item android:id="@+id/gardensFragment"
+        android:title="Jardins"
         android:icon="@drawable/ic_launcher_foreground" />
 </menu>

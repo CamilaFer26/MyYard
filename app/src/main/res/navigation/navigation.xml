@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.unir.myyard.HomeFragment"
+        android:label="Início" />
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.unir.myyard.CatalogFragment"
+        android:label="Catalogar" />
+
+    <fragment
+        android:id="@+id/gardensFragment"
+        android:name="com.unir.myyard.GardensFragment"
+        android:label="Jardins" />
+
+</navigation>

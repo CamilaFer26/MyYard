@@ -3,4 +3,6 @@
     <string name="menu_search">Title</string>
     <string name="menu_settings">menu settings</string>
     <string name="menu_navigation">menu navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

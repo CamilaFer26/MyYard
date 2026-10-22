@@ -9,7 +9,9 @@ import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -29,8 +31,8 @@ public class Picture {
     }
 
     // Launcher que "escuta" a resposta do imagepicker
-    public static ActivityResultLauncher<Intent> criarLauncher(AppCompatActivity activity, OnFotoCapturadaListener listener) {
-        return activity.registerForActivityResult(
+    public static ActivityResultLauncher<Intent> criarLauncher(@NonNull Fragment fragment, OnFotoCapturadaListener listener) {
+        return fragment.registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     int resultCode = result.getResultCode();
@@ -40,17 +42,18 @@ public class Picture {
                         Uri uriFoto = data.getData();
 
                         if (uriFoto != null) {
+                            Context context = fragment.requireContext();
                             // converte uri em file temporário
-                            File fileFoto = converterUriParaFile(activity, uriFoto);
+                            File fileFoto = converterUriParaFile(context, uriFoto);
 
                             if (fileFoto != null) {
                                 listener.onFotoRecebida(fileFoto);
                             } else {
-                                Toast.makeText(activity, "Erro ao processar imagem capturada", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context, "Erro ao processar imagem capturada", Toast.LENGTH_SHORT).show();
                             }
                         }
                     } else if (resultCode == ImagePicker.RESULT_ERROR) {
-                        Toast.makeText(activity, ImagePicker.getError(data), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(fragment.requireContext(), ImagePicker.getError(data), Toast.LENGTH_SHORT).show();
                     }
                 }
         );
