@@ -22,9 +22,7 @@ android {
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "PLANTNET_API_KEY", "\"2b103CaRm8FhUoXNd5iOLXsu\"")
     }
 
     buildTypes {
@@ -50,4 +48,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     implementation("com.squareup.retrofit2:retrofit:3.0.0")
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    implementation("com.github.dhaval2404:imagepicker:2.1")
 }
