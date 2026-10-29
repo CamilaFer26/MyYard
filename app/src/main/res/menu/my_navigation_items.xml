@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/homeFragment"
         android:title="Início"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/home" />
 
     <item android:id="@+id/catalogFragment"
         android:title="Catalogar"
-        android:icon="@drawable/camera" />
+        android:icon="@drawable/scan_plant" />
 
     <item android:id="@+id/gardensFragment"
         android:title="Jardins"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/garden" />
 </menu>

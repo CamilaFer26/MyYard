@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -24,7 +25,7 @@ public class CatalogFragment extends Fragment {
 
     private ActivityResultLauncher<Intent> imagePickerLauncher;
     private TextView tvResultado;
-    private Button btnCapturarFoto;
+    private ImageButton btnCapturarFoto;
 
     public CatalogFragment() {
         // Required empty public constructor
@@ -55,7 +56,7 @@ public class CatalogFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         tvResultado = view.findViewById(R.id.tvResultado);
-        btnCapturarFoto = view.findViewById(R.id.btnFoto);
+        btnCapturarFoto = view.findViewById(R.id.imageButton);
 
         if (btnCapturarFoto != null) {
             btnCapturarFoto.setOnClickListener(v -> {

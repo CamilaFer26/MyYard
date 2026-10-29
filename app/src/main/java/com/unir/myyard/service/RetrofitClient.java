@@ -14,6 +14,9 @@ public class RetrofitClient {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
+        // o retrofit implementa a interface em memória, onde é
+        // concentrado o código pesado de conexão HTTP, conversão
+        // de JSON para objetos e estruturação das chamadas
         return retrofit.create(PlantNetApi.class);
     }
 }
